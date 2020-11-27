@@ -6,11 +6,11 @@
        float: left;
      }
    .col-lg-4
-     {width: 33.3%;}
+     {width: 30%;}
    .col-lg-6
-     {width: 50%;}
+     {width: 45%;}
    .col-lg-12
-     {width: 100%;}
+     {width: 90%;}
  }
 @media (min-width: 768px) and (max-width: 991px)
  {
@@ -19,11 +19,11 @@
       float: left;
     }
   .col-md-4
-    {width: 33.3%;}
+    {width: 30%;}
   .col-md-6
-    {width: 50%;}
+    {width: 45%;}
   .col-md-12
-    {width: 100%;}
+    {width: 94%;}
  }
 @media (max-width: 767px)
   {
@@ -32,9 +32,9 @@
        float: left;
      }
    .col-sm-4
-     {width: 33.3%;}
+     {width: 30%;}
    .col-sm-6
-     {width: 50%;}
+     {width: 45%;}
    .col-sm-12
      {width: 100%;}
   }
@@ -42,24 +42,14 @@
  {
   background-color: #999999;
   border: 2px solid black;
+  position: relative;
  }
 div
  {
   margin: 5px;
   padding: 10px;
  }
-span
- {
-  font-size: 1.25em;
-  padding: 10px;
-  border: 2px solid black;
-  margin: 0px;
- }
-.tabs
- {
-  text-align: right;
-  margin: 0px;
- }
+
 h1
  {
   text-align: center;
@@ -83,4 +73,15 @@ h1
 .row
  {
   width: 100%;
+ }
+
+span.absolute
+ {
+   position: absolute;
+   font-size: 1.25em;
+   padding: 10px;
+   border: 2px solid black;
+   right: -2px;
+   top: -1px;
+   font-family: Helvetica;
  }
