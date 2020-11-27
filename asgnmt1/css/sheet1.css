@@ -58,7 +58,7 @@ h1
 .container
  {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 15px;
  }
 .chicken
  {background-color: #D59898;
