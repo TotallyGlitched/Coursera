@@ -1,0 +1,86 @@
+*{font-family: Arial, Helvetica, Sans-serif}
+@media (min-width: 992px)
+ {
+   .col-lg-4, .col-lg-6, .col-lg-12
+     {
+       float: left;
+     }
+   .col-lg-4
+     {width: 33.3%;}
+   .col-lg-6
+     {width: 50%;}
+   .col-lg-12
+     {width: 100%;}
+ }
+@media (min-width: 768px) and (max-width: 991px)
+ {
+  .col-md-4, .col-md-6, .col-md-12
+    {
+      float: left;
+    }
+  .col-md-4
+    {width: 33.3%;}
+  .col-md-6
+    {width: 50%;}
+  .col-md-12
+    {width: 100%;}
+ }
+@media (max-width: 767px)
+  {
+   .col-sm-4, .col-sm-6, .col-sm-12
+     {
+       float: left;
+     }
+   .col-sm-4
+     {width: 33.3%;}
+   .col-sm-6
+     {width: 50%;}
+   .col-sm-12
+     {width: 100%;}
+  }
+.bgcolor
+ {
+  background-color: #999999;
+  border: 2px solid black;
+ }
+div
+ {
+  margin: 5px;
+  padding: 10px;
+ }
+span
+ {
+  font-size: 1.25em;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 0px;
+ }
+.tabs
+ {
+  text-align: right;
+  margin: 0px;
+ }
+h1
+ {
+  text-align: center;
+  font-size: 1.75em;
+ }
+.container
+ {
+  display: grid;
+  grid-gap: 10px;
+ }
+.chicken
+ {background-color: #D59898;
+ }
+.beef
+ {background-color: #C14543;
+  color: white;
+ }
+.sushi
+ {background-color: #E5D198;
+ }
+.row
+ {
+  width: 100%;
+ }

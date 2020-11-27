@@ -21,3 +21,4 @@
 [1126/232951.303:ERROR:exception_snapshot_win.cc(99)] thread ID 600 not found in process
 [1126/232951.360:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [1126/232951.360:ERROR:exception_snapshot_win.cc(99)] thread ID 12548 not found in process
+[1127/004336.139:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
