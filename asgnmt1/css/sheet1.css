@@ -40,6 +40,8 @@
   }
 .bgcolor
  {
+  
+  box-sizing: border-box;
   background-color: #999999;
   border: 2px solid black;
   position: relative;
