@@ -1,16 +1,12 @@
 *{font-family: Arial, Helvetica, Sans-serif}
 @media (min-width: 992px)
  {
-   .col-lg-4, .col-lg-6, .col-lg-12
+   .col-lg-4
      {
        float: left;
+       width: 31%;
      }
-   .col-lg-4
-     {width: 30%;}
-   .col-lg-6
-     {width: 45%;}
-   .col-lg-12
-     {width: 90%;}
+   
  }
 @media (min-width: 768px) and (max-width: 991px)
  {
