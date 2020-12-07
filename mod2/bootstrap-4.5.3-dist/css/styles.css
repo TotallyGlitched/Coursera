@@ -6,6 +6,10 @@ span.eos
  {
   color: white;
  }
+#collapsable-nav
+  {
+    background-color: red;
+  }
 .nav-me
   {
     background-color: #999999;
