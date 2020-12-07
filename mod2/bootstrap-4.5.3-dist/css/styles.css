@@ -6,10 +6,7 @@ span.eos
  {
   color: white;
  }
-#collapsable-nav
-  {
-    background-color: red;
-  }
+
 .nav-me
   {
     background-color: #999999;
@@ -17,9 +14,10 @@ span.eos
   }
 .nav-order
   {
+    margin-left: -500px;
+    margin-right: -500px;
     padding: 5px;
     background-color: #0e2433;
-    width: 100%;
   }
 a.nav-a
   {
