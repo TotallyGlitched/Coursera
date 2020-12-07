@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" scale="initial-scale=1">
-    <link rel="stylesheet" href="\bootstrap-4.5.3-dist\css\styles.css">
-    <link rel="stylesheet" href="\bootstrap-4.5.3-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist\css\styles.css">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Assignment Solution Module-3</title>
   </head>
@@ -15,45 +15,57 @@
           <div class="navbar-brand">
             <a href="index.html" class="brand-me">Food, LLC</a>
           </div>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed d-block d-md-none d-lg-none" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="fa fa-bars"></span>
           </button>
-        </div>
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="navv-me" class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#">
-                <div class="text-center"></div><br class="hidden-xs"> Chicken</a>
-            </li>
-            <li>
-              <a href="#">
-                <div  class="text-center"></div><br class="hidden-xs"> Beef</a>
-            </li>
-            <li>
-              <a href="#">
-                <div  class="text-center"></div><br class="hidden-xs"> Sushi</a>
-            </li>
-          </ul>
+          <div id="collapsable-nav" class="collapse navbar-collapse d-md-none">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#chicken" class="nav-a">
+                <div class="text-center nav-order"> Chicken</div>
+                </a>
+              </li>
+              <li>
+                <a href="#beef" class="nav-a">
+                  <div  class="text-center nav-order"> Beef</div>
+                </a>
+              </li>
+              <li>
+                <a href="#sushi" class="nav-a">
+                  <div  class="text-center nav-order">Sushi</div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
-    <h3 class="text-center">Our Menu</h3>
+    <h3 class="text-center" id='top'>Our Menu</h3>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-xs-12 desc">
-          <h2 class="text-center"><span>Chicken</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="desc">
+            <h2 class="text-center" id='chicken'><span>Chicken</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.<br><a href='#top'><span class='eos'>END, Back to Top</span></a>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-xs-12 desc">
-          <h2 class="text-center"><span>Beef</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="desc">
+            <h2 class="text-center" id='beef'><span>Beef</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.<br><a href='#top'><span class='eos'>END, Back to Top</span></a>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-xs-12 desc">
-          <h2 class="text-center"><span>Sushi</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="col-lg-4 col-md-12 col-xs-12">
+          <div class='desc'>
+            <h2 class="text-center" id='sushi'><span>Sushi</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.<br><a href='#top'><span class='eos'>END, Back to Top</span></a>
+          </div>
         </div>
       </div>
     </div>
+    <script src="bootstrap-4.5.3-dist\js\jquery-1.10.2.min.js"></script>
+    <script src="bootstrap-4.5.3-dist\js\bootstrap.min.js"></script>
   </body>
 </html>

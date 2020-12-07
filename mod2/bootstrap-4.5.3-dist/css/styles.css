@@ -2,26 +2,42 @@
   {
     box-sizing: border-box;
   }
+span.eos
+ {
+  color: white;
+ }
 .nav-me
   {
     background-color: #999999;
     border: 2px solid black;
   }
-#navv-me
+.nav-order
   {
+    padding: 5px;
+    outline: 4px solid #003B6D;
     background-color: #0e2433;
+    width: 100%;
+  }
+a.nav-a
+  {
+    text-decoration: none;
+  }
+a.nav-a:hover
+  {
+    text-decoration: none;
+    color: white;
   }
 a.brand-me
   {
-    text-decoration: none;
     color: black;
-    font-weight: 700;
+    font-weight: bold;
   }
 a.brand-me:hover
   {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
   }
+
 h3
   {
     font-weight: 900px;
@@ -30,7 +46,6 @@ h3
   }
 .desc
   {
-    width: 25%;
     margin: 10px;
     background-color: #999999;
     padding: 10px;
