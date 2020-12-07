@@ -30,11 +30,13 @@ a.nav-a:hover
   }
 a.brand-me
   {
+    float: left;
     color: black;
     font-weight: bold;
   }
 a.brand-me:hover
   {
+    float: left;
     color: black;
     text-decoration: none;
   }
