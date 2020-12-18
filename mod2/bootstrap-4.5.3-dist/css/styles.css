@@ -6,7 +6,6 @@ span.eos
  {
   color: white;
  }
-
 .nav-me
   {
     background-color: #999999;
@@ -14,8 +13,9 @@ span.eos
   }
 .nav-order
   {
-    margin-left: -500px;
-    margin-right: -500px;
+    overflow: hidden;
+    margin-left: -700px;
+    margin-right: -700px;
     padding: 5px;
     background-color: #0e2433;
   }
