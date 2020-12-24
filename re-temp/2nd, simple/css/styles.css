@@ -1,0 +1,11 @@
+.iconlike
+  {
+    width: 10vw;
+    height: auto;
+    border-radius: 100%;
+  }
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
