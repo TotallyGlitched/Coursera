@@ -1,0 +1,17 @@
+
+.parallax {
+
+    /* Set a specific height */
+  max-height: 580px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#one
+    {
+        background-image: url("\pics\img1.jpg");
+    }
