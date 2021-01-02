@@ -26,19 +26,19 @@ body::-webkit-scrollbar-thumb {
   background: #37f2ff9c;
 }
 
-.main {
+.main-custom {
   margin-left: 5rem;
   padding: 1rem;
 }
 
-.navbar {
+.navbar-custom {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 200ms ease;
   overflow: hidden;
 }
 
-.navbar-nav {
+.navbar-nav-custom {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -48,15 +48,15 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
 }
 
-.nav-item {
+.nav-item-custom {
   width: 100%;
 }
 
-.nav-item:last-child {
+.nav-item-custom:last-child {
   margin-top: auto;
 }
 
-.nav-link {
+.nav-link-custom {
   display: flex;
   align-items: center;
   height: 5rem;
@@ -66,17 +66,17 @@ body::-webkit-scrollbar-thumb {
   transition: var(--transition-speed);
 }
 
-.link-text {
+.link-text-custom {
   display: none;
   margin-left: 1rem;
 }
 
-.nav-link i {
+.nav-link-custom i {
   min-width: 2rem;
   margin: 0 1.5rem;
 }
 
-.nav-link:hover {
+.nav-link-custom:hover {
   filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
   color: var(--text-secondary);
@@ -86,51 +86,52 @@ body::-webkit-scrollbar-thumb {
   width: 16rem;
 } */
 
-.navbar:hover {
+.navbar-custom:hover {
   display: block;
 }
 
 @media only screen and (max-width: 600px) {
-  .navbar {
+  .navbar-custom {
     bottom: 0;
     width: 100vw;
     height: 5rem;
   }
 
-  .logo {
+  .logo-custom {
     display: none;
   }
 
-  .navbar-nav {
+  .navbar-nav-custom {
     flex-direction: row;
   }
 
-  .nav-link {
+  .nav-link-custom {
     justify-content: center;
   }
 
-  .main {
+  .main-custom {
     margin: 0;
   }
-  .link-text {
+  .link-text-custom {
     display: none;
   }
 }
 
 /* Large screens */
 @media only screen and (min-width: 600px) {
-  .navbar {
+  .navbar-custom {
     top: 0;
     width: 5rem;
     height: 100vh;
   }
 
-  .navbar:hover {
+  .navbar-custom:hover {
     width: 16rem
   }
 
-  .navbar:hover .link-text {
+  .navbar-custom:hover .link-text-custom {
     display: inline;
   }
-
+   
+  .link-text-custom
 }
