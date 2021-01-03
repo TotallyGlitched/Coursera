@@ -72,6 +72,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-link-custom i {
+  width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
 }
@@ -89,6 +90,35 @@ body::-webkit-scrollbar-thumb {
 .navbar-custom:hover {
   display: block;
 }
+
+
+.logo-custom {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo-custom i {
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+.logo-text-custom
+{
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
   .navbar-custom {
@@ -126,10 +156,23 @@ body::-webkit-scrollbar-thumb {
   }
 
   .navbar-custom:hover {
-    width: 16rem
+    width: 16rem;
   }
 
   .navbar-custom:hover .link-text-custom {
     display: inline;
+  }
+
+  .navbar-custom:hover .logo-custom i
+  {
+    margin-left: 11rem;
+    transform: rotate(180deg);
+    transition: 800ms;
+
+  }
+
+  .navbar-custom:hover .logo-text-custom
+  {
+    left: 0px;
   }
 }
