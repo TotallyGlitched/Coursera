@@ -168,6 +168,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: 11rem;
     transform: rotate(180deg);
     transition: 800ms;
+    font-size: 2rem;
 
   }
 
