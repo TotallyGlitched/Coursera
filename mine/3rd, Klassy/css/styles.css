@@ -1,0 +1,63 @@
+body{
+  overflow-x: hidden;
+}
+
+.parallax {
+  /* Set a specific height */
+  height: 95vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#one {
+    /* The image used */
+  background-image: url("../pics/img1.jpg");
+}
+
+#two {
+  height: 100%;
+  background-color: #d4375ed2;
+  overflow: hidden;
+}
+
+.overlay {
+  display: block;
+  position: relative;
+}
+.overlay::after {
+  content: "";
+  background: url(../pics/images.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d4375ed2;
+}
+
+.background {
+  background-image:url('../pics/images.jpg');
+}
+ 
+
+
+
+/* works to create opaque effect over background image */
+  /* box-shadow: inset 0 0 0 1000px #d4375ed2; */
+
