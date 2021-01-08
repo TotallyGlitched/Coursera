@@ -1,0 +1,41 @@
+@media all and (min-width: 992px) {
+	.navbar{ padding-top: 0; padding-bottom: 0; }
+	.navbar .has-megamenu{position:static!important;}
+	.navbar .megamenu{left:0; right:0; width:100%; padding:20px;  }
+	.navbar .nav-link{ padding-top:1rem; padding-bottom:1rem;  }
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.images {
+    width: 2.5rem;
+}
+
+html {
+    font-size: 1.25rem;
+}
+
+.font-custom {
+    font-size: 1.65rem;
+}
+
+
+.image-height {
+    height: 35%;
+}
+
+.svg-height {
+    height: 45rem;
+}
+.cards:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+.container > svg {
+    display: block;
+    position: absolute;
+  }

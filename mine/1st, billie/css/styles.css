@@ -1,47 +1,48 @@
-
 .parallax {
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    /* Set a specific height */
-  min-height: 588px;
+  body, html {
+    height: 100%;
+  }
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  .one {
+    /* The image used */
+    background-image: url("../images/onee.png");
+}
+.two {
+    /* The image used */
+    background-image: url("../images/two.png");
 }
 
-#one
-  {
-    background-image: url("/images/onee.png");
-  }
-
-#two
-  {
-    background-image: url("/images/two.png");
-  }
-
-#three
-{
-  background-image: url("/images/three.png");
+.three {
+    /* The image used */
+    background-image: url("../images/three.png");
 }
 
-#four
-  {
-    background-image: url("/images/four.png");
-  }
+.four {
+    /* The image used */
+    background-image: url("../images/four.png");
+}
 
-#five
-  {
-    background-image: url("/images/five.png");
-  }
+.five {
+    /* The image used */
+    background-image: url("../images/five.png");
+}
 
-#six
-  {
-    background-image: url("/images/six.png");
-  }
+.six {
+    /* The image used */
+    background-image: url("../images/six.png");
+}
 
-#seven
-  {
-    background-image: url("/images/seven.png");
-  }
+.seven {
+    /* The image used */
+    background-image: url("../images/seven.png");
+}
