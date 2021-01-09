@@ -47,3 +47,20 @@
     /* The image used */
     background-image: url("../images/seven.png");
 }
+
+#cards {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+#cards:hover {
+    background-color: white;
+    transition: ease;
+    color: black;
+    transition-duration: 500ms;
+}
+
+.cafe {
+    background-image: url("../images/Instagrammable-restaurants-Manila.jpg");
+}
