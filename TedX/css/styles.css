@@ -18,11 +18,6 @@ body {
     margin: 0px;
   }
 
-.text_rotate {
-    font-family: 'Bodoni Moda', serif;
-    transform: rotate(270deg);
-    color: rgb(36, 32, 32);
-}
 
 .form-control {
     border: 0;
