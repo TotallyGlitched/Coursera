@@ -30,7 +30,7 @@
           <hr>
           <div class="card-text">
             <div class="container">
-              <form action="payment.html" target="_self" method="POST">
+              <form action="attendee_details.php" onsubmit="func1()" target="none" method="POST">
                 <div class="row w-75 mx-auto">
                   <h5 class="h5-kustom">Attendee details</h5>
                     <div class="col-md-12 col-sm-12 p-1 input-group">
@@ -95,6 +95,11 @@
     </div>
   </div>
 </div>
-    
+    <script>
+      function func1(){
+  window.open('payment.html', '_blank');
+
+}
+    </script>
 </body>
 </html>
