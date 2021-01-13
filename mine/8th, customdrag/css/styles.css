@@ -50,3 +50,16 @@
     font-size: 30px;
     position: absolute;
   }
+
+  @media screen and (max-width: 756px){
+      .client_pics {
+          height: 5rem;
+      }
+  }
+
+  
+  @media screen and (min-width: 757px){
+    .client_pics {
+        height: 10rem;
+    }
+}
