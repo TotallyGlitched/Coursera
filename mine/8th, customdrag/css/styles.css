@@ -16,6 +16,7 @@
     height: auto;
   }
 
+
   @media screen and (max-width: 700px) {
     .image-responsive {
       width: 100px;

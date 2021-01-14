@@ -36,7 +36,7 @@
         </div>
       </nav>
 
-      <div class="container-fluid">
+      <div class="container-fluid ">
           <div class="row gradient align-items-center justify-content-center text-center">
             <div class="col-md-6 col-sm-12">
                 <img src="images/Messenger-bro.svg" alt="">
@@ -48,38 +48,74 @@
           </div>
           
           
-      <div class="owl-carousel m-2">
-        <div class="card">
+      <div class="owl-carousel m-2 text-center">
+        <div class="card border-danger" style="border-radius: 20px;">
           <div class="card-body">
             <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat1-makeup.jpg" alt="">
+          <span class="text-overflow">Makeup</span>
           </div>          
         </div>
-        <div class="card">
+        <div class="card border-danger" style="border-radius: 20px;">
           <div class="card-body">
            <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat2-mehandi.jpg" alt="">
+          <span class="text-overflow">Mehandi</span>
           </div>
         </div>
-        <div class="card">
+        <div class="card border-danger" style="border-radius: 20px;">
           <div class="card-body">
            <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat3-hair.jpg" alt="">
+          <span class="text-overflow">Hair</span>
           </div>
         </div>
-        <div class="card">
+        <div class="card border-danger" style="border-radius: 20px;">
           <div class="card-body">
            <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat4-venue.jpg" alt="">
+          <span class="text-overflow">Venue</span>
           </div>
         </div>
-        <div class="card">
+        <div class="card border-danger" style="border-radius: 20px;">
           <div class="card-body">
            <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat5-photos.jpg" alt="">
+          <span class="text-overflow">Photos</span> 
+          </div>
+        </div>
+        <div class="card border-danger" style="border-radius: 20px;">
+          <div class="card-body">
+            <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat1-makeup.jpg" alt="">
+          <span class="text-overflow">Makeup</span>  
+          </div>          
+        </div>
+        <div class="card border-danger" style="border-radius: 20px;">
+          <div class="card-body">
+           <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat2-mehandi.jpg" alt="">
+          <span class="text-overflow">Mehandi </span> 
+          </div>
+        </div>
+        <div class="card border-danger" style="border-radius: 20px;">
+          <div class="card-body">
+           <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat3-hair.jpg" alt="">
+          <span class="text-overflow"> Hair </span>
+          </div>
+        </div>
+        <div class="card border-danger" style="border-radius: 20px;">
+          <div class="card-body">
+           <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat4-venue.jpg" alt="">
+          <span class="text-overflow">Venue </span> 
+          </div>
+        </div>
+        <div class="card border-danger" style="border-radius: 20px;">
+          <div class="card-body">
+           <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat5-photos.jpg" alt="">
+          <span class="text-overflow">Photos </span> 
           </div>
         </div>
       </div>
 
-      <div class="row justify-content-center text-center">
-        <div class="col-md-4 col-sm-12">
-          <div class="card h-100" style="background-color: rgb(27, 27, 27);">
-            <div class="card-body text-white">
+      <div class="row text-center">
+
+        <div class="col-6 mt-3 p-2 col-md-3">
+          <div class="card h-100" >
+            <div class="card-body">
               <div class="card-img-top mb-2">
                 <img class="w-100" src="images/brideoverlogo.jpg" alt="">
               </div>
@@ -91,7 +127,35 @@
             </div>
           </div>
         </div> 
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-3 mt-3 p-2 col-6">
+          <div class="card h-100 ">
+            <div class="card-body">
+              <div class="card-img-top">
+                <img class="w-100" src="images/ritu-kolentine.png" alt="">
+              </div>
+              <img src="images/kolen2.jpg" style="width: 85%;" alt="">
+              <div class="card-text">
+                <span><i class="far fa-star"></i>Rating: 4.5</span> <br>
+                <span><i class="fas fa-rupee-sign"></i>Pricing: 50K - 80K</span>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-6 mt-3 p-2 col-md-3">
+          <div class="card h-100" >
+            <div class="card-body">
+              <div class="card-img-top mb-2">
+                <img class="w-100" src="images/brideoverlogo.jpg" alt="">
+              </div>
+              <img src="images/bride over 1.jpg"  style="width: 77%;" alt="">
+              <div class="card-text">
+                <span><i class="far fa-star"></i>Rating: 4.3</span> <br>
+                <span><i class="fas fa-rupee-sign"></i>Pricing: 20K - 50K</span>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-3 mt-3 p-2 col-6">
           <div class="card h-100 ">
             <div class="card-body">
               <div class="card-img-top">
@@ -118,15 +182,15 @@
     responsiveClass:true,
     responsive:{
         0:{
-            items:1,
+            items:3,
             nav:true
         },
         600:{
-            items:3,
+            items:4,
             nav:false
         },
         1000:{
-            items:5,
+            items:7,
             nav:true,
             loop:false
         }
