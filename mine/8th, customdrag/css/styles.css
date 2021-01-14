@@ -7,59 +7,18 @@
     overflow-x:hidden;
   }
   
-  .contain {
-    position: relative;
-    width: 100%;
+  /* @media screen and (max-width: 756px){
+  } */
+
+  .image-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
-  .overlay-light {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #faf8f8;
-  }
-  .overlay-dark {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #1a1a1a;
-  }
-  .contain:hover .overlay-light {
-    opacity: 0.75;
-  }
-  
-  
-  .contain:hover .overlay-dark {
-    opacity: 0.75;
-  }
-
-  .text {
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    position: absolute;
-  }
-
-  @media screen and (max-width: 756px){
-      .client_pics {
-          height: 5rem;
-      }
-  }
-
-  
-  @media screen and (min-width: 757px){
-    .client_pics {
-        height: 10rem;
+  @media screen and (max-width: 700px) {
+    .image-responsive {
+      width: 100px;
+      height: 100px;
     }
-}
+  }  

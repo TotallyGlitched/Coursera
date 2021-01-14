@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Services</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/42a48ada23.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&display=swap" rel="stylesheet">
-
-
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  </head>
 <body>
     <nav class="navbar container navbar-expand-lg navbar-light mt-2">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,62 +46,92 @@
                 <h3>By Professionals who really <span style="border-bottom: 3px solid #ff41a0; ">care.</span></h3>
             </div>            
           </div>
-          <div class="row align-items-center justify-content-center text-center">
-            <div class="col-md-6 col-sm-11 m-0">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="contain">
-                            <img src="images/kolen logo.png" alt="">
-                           <div class="overlay-dark text text-white">
-                              &lt; Learn More &gt;
-                           </div>
-                       </div>
-                      <!-- <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                    </div>
-                </div>                
-            </div>
-            <div class="col-md-6 col-sm-9">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="contain">
-                             <img src="images/brideover.png" alt="">
-                            <div class="overlay-light text">
-                              &lt; Learn More &gt;
-                            </div>
-                        </div>
-                    </div>  
-                </div> 
-            </div>    
+          
+          
+      <div class="owl-carousel m-2">
+        <div class="card">
+          <div class="card-body">
+            <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat1-makeup.jpg" alt="">
+          </div>          
+        </div>
+        <div class="card">
+          <div class="card-body">
+           <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat2-mehandi.jpg" alt="">
           </div>
-          <div class="row mt-4">
-              <div class="col-md-3 col-sm-3 text-right">
-                <img src="images/kolen1.jpg" class="client_pics" alt="">
-              </div>
-              <div class="col-md-6 col-sm-3 text-center">
-                <h3>Kolentine's International</h3>
-                When it comes to us, quality has never been the issue. Owned by renowned international make-up artist Kolentine, we give you your dream looks and help you present your best self.
-              </div>
-              <div class="col-md-3 col-sm-3">
-                <img src="images/kolen2.jpg" class="client_pics" alt="">
-              </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+           <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat3-hair.jpg" alt="">
           </div>
-          <div class="row mt-3">
-            <div class="col-md-3 col-sm-4 text-right">
-              <img src="images/bride over 1.jpg" class="client_pics" alt="">
-            </div>
-            <div class="col-md-6 col-sm-3 text-center">
-              <h3>Bride Over</h3>
-                The months leading upto the wedding are almost more stressful that the wedding jitters themselves. We'll pamper you from head-to-toe and give you the best glow up possible. <span class="text-muted">Bookings also available for Bride and Groom's families</span>
-            </div>
-            <div class="col-md-3 col-sm-3">
-              <img src="images/bride over2.jpg" class="client_pics" alt="">
-            </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+           <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat4-venue.jpg" alt="">
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+           <img class="image-responsive img-thumbnail rounded-circle img-fluid"  src="images/cat5-photos.jpg" alt="">
+          </div>
         </div>
       </div>
 
+      <div class="row justify-content-center text-center">
+        <div class="col-md-4 col-sm-12">
+          <div class="card h-100" style="background-color: rgb(27, 27, 27);">
+            <div class="card-body text-white">
+              <div class="card-img-top mb-2">
+                <img class="w-100" src="images/brideover.jpg" alt="">
+              </div>
+              <img src="images/bride over 1.jpg"  style="width: 77%;" alt="">
+              <div class="card-text">
+                <span><i class="far fa-star"></i>Rating: 4.3</span> <br>
+                <span><i class="fas fa-rupee-sign"></i>Pricing: 20K - 50K</span>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-4 col-sm-12">
+          <div class="card h-100 ">
+            <div class="card-body">
+              <div class="card-img-top">
+                <img class="w-100" src="images/ritu-kolentine.png" alt="">
+              </div>
+              <img src="images/kolen2.jpg" style="width: 85%;" alt="">
+              <div class="card-text">
+                <span><i class="far fa-star"></i>Rating: 4.5</span> <br>
+                <span><i class="fas fa-rupee-sign"></i>Pricing: 50K - 80K</span>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+      </div>
+  </div>
+
 <div class="footer bg-dark text-white text-center mt-4"> Belle </div>
 
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+</script>
 </body>
 </html>
