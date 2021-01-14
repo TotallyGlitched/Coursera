@@ -6,27 +6,66 @@
     font-family: 'Roboto Condensed', sans-seriff;
     overflow-x:hidden;
   }
+  .text-overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   
   /* @media screen and (max-width: 756px){
   } */
 
   .image-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    height: 100%;
+    max-height: 700px;
+    width: auto;
   }
+/* 
+
+  <576px
+  Small	sm	≥576px
+  Medium	md	≥768px
+  Large	lg	≥992px
+  Extra large	xl	≥1200px
+  Extra extra large	xxl	≥1400px
+ */
 
 
-  @media screen and (max-width: 700px) {
+ @media screen and (max-width: 400px) {
+  .image-responsive {
+    height: 125px;
+  }
+}  
+
+@media screen and (max-width: 570px) {
+  .image-responsive {
+    height: 200px;
+  }
+} 
+  @media screen and (min-width: 576px) {
     .image-responsive {
-      width: 100px;
-      height: 100px;
+      height: 250px;
     }
   }  
 
+  @media screen and (min-width: 768px) {
+    .image-responsive {
+      height: 175px;
+    }
+  }  
 
-.text-overflow{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+  @media screen and (min-width: 992px) {
+    .image-responsive {
+      height: 200px;
+    }
+  }  
+  @media screen and (min-width: 1200px) {
+    .image-responsive {
+      height: 250px;
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    .image-responsive {
+      height: 350px;
+    }
+  }
