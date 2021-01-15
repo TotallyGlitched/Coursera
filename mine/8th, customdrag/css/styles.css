@@ -7,6 +7,21 @@
     overflow-x:hidden;
   }
   
+.yellow {
+  color: #ecf022f1;
+}
+
+.offset-card-brideover {
+  position: absolute;
+  bottom: 10%;
+  width: 60%;
+  left: 20%;
+}
+
+  .script {
+    font-family: 'Dancing Script', sanns-serif;
+  }
+
   .text-overflow{
     white-space: nowrap;
     overflow: hidden;
