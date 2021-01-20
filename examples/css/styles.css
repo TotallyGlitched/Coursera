@@ -47,6 +47,19 @@ a:hover {
     padding: 0;
 }
 
+.block_container {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+    text-align: center;
+}
+
+.box_new{
+    border: 2px solid black;
+    margin: 3%;
+    background-color:crimson;
+}
+
 .anchor {
     margin: 0 auto;
     background-color:black;
