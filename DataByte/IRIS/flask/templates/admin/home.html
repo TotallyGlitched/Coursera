@@ -1,0 +1,92 @@
+{% extends "./admin/layouts.html" %} {% block content %}
+
+<div class="container-fluid justify-content-center wrapper py-5">
+
+    <h2>Dashboard</h2>
+    <div class="row text-white">
+        <div class="col-sm-12 col-md-6 mt-3">
+            <div class="card text-white" style="background:#1b6ca8">
+                <div class="card-header">
+                    Total Users
+                </div>
+                <div class="card-body h3">
+                    {{y['custcount']}}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 mt-3">
+            <div class="card " style="background:#1b6ca8">
+                <div class="card-header">
+                    Total Manager Account
+                </div>
+                <div class="card-body h3">
+                    {{y['usrcount']}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row  mt-3">
+        <div class="col-sm-12 col-md-6 mt-3">
+            <div class="card text-white " style="background:#1b6ca8">
+                <div class="card-header">
+                    Total Users
+                </div>
+                <div class="card-body h3">
+                    <table class="table text-white table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Added</th>
+                                <th scope="col">View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            {% for emp in y['customer'] %}
+                            <tr>
+                                <td>{{ emp['name'] }}</td>
+                                <td>{{ emp['addeddate'] }}</td>
+                                <td>{{ emp['_id'] }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6  mt-3">
+            <div class="card text-white" style="background:#1b6ca8">
+                <div class="card-header">
+                    Total Manager Account
+                </div>
+                <div class="card-body h3">
+                    <table class="table text-white  table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Location Id</th>
+                                <th scope="col">Added</th>
+                                <th scope="col">View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for emp in y['usr'] %}
+                            <tr>
+                                <td>{{ emp['name'] }}</td>
+                                <td>{{ emp['loc'] }}</td>
+                                <td>{{ emp['addeddate'] }}</td>
+                                <td><a href="/manager/view/{{emp['_id']}}" class="btn btn-primary">View</a></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

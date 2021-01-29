@@ -1,0 +1,79 @@
+.gradient {
+    background-color: #fadbda;
+  }
+
+  body {
+    font-family: 'Roboto Condensed', sans-seriff;
+    overflow-x:hidden;
+  }
+  
+
+.yellow {
+  color: #ecf022f1;
+}
+
+.offset-card-brideover {
+  position: absolute;
+  bottom: 10%;
+  width: 60%;
+  left: 20%;
+}
+
+  .script {
+    font-family: 'Dancing Script', sanns-serif;
+  }
+
+  .text-overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .image-responsive {
+    height: 100%;
+    max-height: 700px;
+    width: auto;
+  }
+
+  @media screen and (max-width: 400px) {
+  .image-responsive {
+    height: 125px;
+  }
+}  
+
+@media screen and (max-width: 570px) {
+  .image-responsive {
+    height: 200px;
+  }
+} 
+  @media screen and (min-width: 576px) {
+    .image-responsive {
+      height: 250px;
+    }
+  }  
+
+  @media screen and (min-width: 768px) {
+    .image-responsive {
+      height: 175px;
+    }
+  }  
+
+  @media screen and (min-width: 992px) {
+    .image-responsive {
+      height: 200px;
+    }
+  }  
+  @media screen and (min-width: 1200px) {
+    .image-responsive {
+      height: 250px;
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    .image-responsive {
+      height: 350px;
+    }
+  }
+
+  .border-logo {
+   border-color: #fd1288; 
+  }

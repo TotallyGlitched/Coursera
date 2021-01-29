@@ -1,0 +1,44 @@
+{% extends "./admin/layouts.html" %} {% block content %}
+
+<div class="container-fluid justify-content-center wrapper py-5">
+    <a href="{{url_for('manager')}}" class="btn btn-primary float-right">Back</a>
+    <h2>Manager</h2>
+    <div class="col-sm-12 col-md-12">
+        <div class="card text-white" style="background:#1b6ca8">
+            <div class="card-header">
+                Manager List
+            </div>
+            <div class="card-body h3">
+                <div class="row align-items-center">
+                    <div class="col-sm-6 col-md-6">
+                        Name
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        {{value['name']}}
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-sm-6 col-md-6">
+                        Email
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        {{value['email']}}
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-sm-6 col-md-6">
+                        loc
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        {{value['loc']}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "./Manager/layouts.html" %} {% block content %}
+
+<div class="container-fluid justify-content-center wrapper py-5">
+
+    <h2>Dashboard</h2>
+
+    <div class="row text-dark p-3" id="row">
+        asd
+    </div>
+
+</div>
+<script>
+</script>
+
+<script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+<script>
+    arrrow = []
+    emails = []
+    document.getElementById("row").innerHTML = "<h3 class='mt-3'>Sorry no one for now</h3>";
+    const pusher = new Pusher('532ab91db0edb9b0876b', {
+        cluster: 'ap2',
+        encrypted: true
+    });
+    var x = "a" + '{{session["loc"]}}';
+    const channel = pusher.subscribe(x);
+
+    channel.bind('hi', data => {
+        if (emails.includes(data['email']) == false) {
+            var sa = '<div class="col-md-4 col-sm-12 mt-3"><div class="card"><img class="w-100" src="/static/' + data['fstore'] + '" alt=" "><div class="card-body"><h5 class="card-title">' + data['name'] + '</h5><p class="card-text"> Email : ' + data['email'] + '</p><p class="card-text"> Phone Number : ' + data['phno'] + '</p><a href="/customer/view/' + data['id'] + '" class="btn btn-primary">Go somewhere</a> </div></div></div>';
+            arrrow.push(sa)
+            var aa = document.getElementById("row").innerHTML
+            document.getElementById("row").innerHTML = arrrow.join('');
+            emails.push(data['email'])
+        }
+
+        console.log(data);
+    });
+</script>
+
+
+{% endblock %}
+
+<!-- <div class="col-md-3 col-sm-12 bg-info">
+    <div class="card" style="width: 18rem;">
+        <img class="w-100" src="{{ url_for( 'static', filename='img/img/rajpraveen786.jpg') }} " alt=" ">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div> -->

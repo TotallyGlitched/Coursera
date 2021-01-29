@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block content %}
+
+
+<h1>Manager Registraition</h1>
+
+<form method="post">
+    {{ form.csrf_token }}
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            {{form.name.label(class="input-group-text")}}
+        </div>
+        {{form.name(size=20,class="form-control")}}
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            {{form.email.label(class="input-group-text")}}
+        </div>
+        {{form.email(size=20,class="form-control")}}
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            {{form.locationid.label(class="input-group-text")}}
+        </div>
+        {{form.locationid(size=20,class="form-control")}}
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            {{form.password.label(class="input-group-text")}}
+        </div>
+        {{form.password(size=20,class="form-control")}}
+    </div>
+    <input type="submit" value="Submit">
+
+</form>
+
+{% endblock %}

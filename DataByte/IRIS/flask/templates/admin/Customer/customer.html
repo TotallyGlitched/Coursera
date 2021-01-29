@@ -1,0 +1,42 @@
+{% extends "./admin/layouts.html" %} {% block content %}
+
+<div class="container-fluid justify-content-center wrapper py-5">
+    <h2>Manager</h2>
+    <div class="col-sm-12 col-md-12">
+        <div class="card text-white" style="background:#1b6ca8">
+            <div class="card-header">
+                Customer List
+            </div>
+            <div class="card-body h3">
+                <table class="table text-white table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col-1">Image</th>
+                            <th scope="col-2">Name</th>
+                            <th scope="col-2">email</th>
+                            <th scope="col-2">phno</th>
+                            <th scope="col-2">View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for emp in cust %}
+
+                        <tr>
+                            <td style=" vertical-align: middle;" "><img class=" " src="{{ url_for( 'static', filename=emp[ 'facestorloc']) }} " style="height:150px;width:150px " alt=" "></td>
+                            <td style=" vertical-align: middle; "">{{ emp['name'] }}</td>
+                            <td style=" vertical-align: middle;" ">{{ emp['email'] }}</td>
+                            <td style=" vertical-align: middle; "">{{ emp['phno'] }}</td>
+                            <td style=" vertical-align: middle;" "><a href="/customer/view/{{emp[ '_id']}} " class="btn btn-primary ">View</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+{% endblock %}

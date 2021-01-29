@@ -15,7 +15,8 @@ body{
 #one {
     /* The image used */
   background-image: url("../pics/img1.jpg");
-}
+} 
+
 
 #two {
   height: 100%;

@@ -1,0 +1,87 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Login</div>
+                <div class="card-body">
+                    <form action="/registeruser" method="post" enctype="multipart/form-data">
+                        {{ form.csrf_token }}
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Name</span>
+                            </div>
+                            <input type="text" class="form-control" name="name" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Email</span>
+                            </div>
+                            <input type="text" class="form-control" name="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Phone number</span>
+                            </div>
+                            <input type="text" class="form-control" name="phno" placeholder="Phone number" aria-label="Phone number" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupFileAddon01">Photo</span>
+                            </div>
+                            <div class="custom-file">
+
+                                <input type="file" required class="custom-file-input" name="photo" accept="image/*;capture=camera">
+                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            </div>
+                        </div>
+
+                        <h6>By registering, You accept the <a type="button" class="text-primary" data-toggle="modal" data-target="#myModal">
+                            Terms and Condition
+                        </a>
+                        </h6>
+
+
+
+
+
+                        <input type="submit" class="btn btn-primary float-right" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

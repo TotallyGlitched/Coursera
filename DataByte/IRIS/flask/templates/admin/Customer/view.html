@@ -1,0 +1,38 @@
+{% extends "./admin/layouts.html" %} {% block content %}
+
+<div class="container p-1 mt-3">
+    <div class="row h-100 align-items-center">
+        <div class="col-sm-12 col-md-4">
+            <img class=" " src="{{ url_for( 'static', filename=value[ 'facestorloc']) }} " style="height:150px;width:150px " alt=" ">
+        </div>
+        <div class="col-md-8 col-sm-12">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    Name :
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    {{value['name']}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    Email :
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    {{value['email']}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    Phone number :
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    {{value['phno']}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

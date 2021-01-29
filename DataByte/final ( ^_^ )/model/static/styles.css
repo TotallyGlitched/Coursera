@@ -1,0 +1,35 @@
+.gradient {
+    background-color: #626cf8;
+  }
+
+  body {
+    font-family: 'Roboto Condensed', sans-seriff;
+    overflow-x:hidden;
+  }
+
+.offset-card-brideover {
+  position: absolute;
+  bottom: 10%;
+  width: 60%;
+  left: 20%;
+}
+
+  .scripts {
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .text-overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .image-responsive {
+    height: 100%;
+    max-height: 700px;
+    width: auto;
+  }
+
+  .border-logo {
+   border-color: #fd1288; 
+  }

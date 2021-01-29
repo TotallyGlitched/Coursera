@@ -1,0 +1,41 @@
+{% extends "./admin/layouts.html" %} {% block content %}
+
+<div class="container-fluid justify-content-center wrapper py-5">
+    <a href="{{url_for('regman')}}" class="btn btn-primary float-right">Add</a>
+    <h2>Manager</h2>
+    <div class="col-sm-12 col-md-12">
+        <div class="card text-white" style="background:#1b6ca8">
+            <div class="card-header">
+                Manager List
+            </div>
+            <div class="card-body h3">
+                {% for emp in manager %}
+                <table class="table text-white  table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Added</th>
+                            <th scope="col">View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>{{ emp['name'] }}</td>
+                            <td>{{ emp['loc'] }}</td>
+                            <td>{{ emp['addeddate'] }}</td>
+                            <td><a href="/manager/view/{{emp['_id']}}" class="btn btn-primary">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+{% endblock %}
