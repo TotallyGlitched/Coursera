@@ -156,3 +156,16 @@ table {
     -webkit-text-fill-color: transparent;
 }
  
+body::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:  linear-gradient(0deg, #F9F295 0%, #E0AA3E 25%, #E0AA3E 50%, #B88A44 75%, #dba904 100%);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: transparent;
+    background: transparent;
+    box-shadow: 0px 0px 0px 100000vh black;
+  }
