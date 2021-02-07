@@ -48,7 +48,7 @@
 @media screen and (max-width: 900px) and (min-width: 601px){
     .bg-responsive {
         background: url('images/conhalmd.png');
-        height: 70vh;
+        height: 80vh;
     }
     .hfix {
         height: 22rem;
@@ -58,7 +58,7 @@
 @media screen and (max-width: 1400px) and (min-width: 901px){
   .bg-responsive {
       background: url('images/conhal.png');
-      height: 70vh;
+      height: 80vh;
   }
     .hfix {
         height: 20rem;
