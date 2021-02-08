@@ -148,8 +148,8 @@ table {
 
   
 .goldentext {
-    background: -webkit-linear-gradient(to right, #B78628, #C69320, #DBA514, #EEB609, #FCC201); 
-    background:linear-gradient(to right,  #B78628, #C69320, #DBA514, #EEB609, #FCC201);
+    background: -webkit-linear-gradient(to right, #F9F295 0%, #E0AA3E 25%, #E0AA3E 50%, #8f6b35 75%, #ddbb4a 100%); 
+    background:linear-gradient(to right,  #F9F295 0%, #E0AA3E 25%, #E0AA3E 50%, #B88A44 75%, #dba904 100%);
     /* background: -webkit-linear-gradient(#ae8625, #f7ef8a); */
     -webkit-background-clip: text;
     background-clip: text;
