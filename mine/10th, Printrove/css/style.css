@@ -1,14 +1,14 @@
 form{margin-top:1rem;}
 
-.form-group{position:relative; width: auto;}
-.form-control{height: 40px;}
-.form-control:focus{box-shadow:none;}
+.form-group-float{position:relative; width: auto;}
+.form-control-float{height: 40px;}
+.form-control-float:focus{box-shadow:none;}
 
-label{position:absolute; left:30px; top:10px; transition:all 0.3s; color:#999; font-weight:normal;}
+.label-float{position:absolute; left:30px; top:10px; transition:all 0.3s; color:#999; font-weight:normal;}
 
-.form-control:focus ~ label{left:25px; top:-10px; padding:0 5px; color: black; background-color: white;}
+.form-control-float:focus ~ label{left:20px; top:-10px; padding:0 5px; color: black; background-color: white;}
 
-label.active{left:5px; top:-10px; background:#fff; padding:0 5px;}
+.label-float.active{left:5px; top:-10px; background:#fff; padding:0 5px;}
 
 body{
     background-image: url('../bgadmin.png');
