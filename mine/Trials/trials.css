@@ -1,0 +1,12 @@
+.hide {
+    display: none;
+  }
+  
+  .info:hover + .hide {
+    display: block;
+    color: white;
+  }
+
+ td {
+    border-bottom: 1px solid white;
+  }
