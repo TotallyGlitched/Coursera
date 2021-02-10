@@ -1,14 +1,12 @@
 .hide {
     display: none;
     position: absolute;
-    background-color: #d39696;
+    background-color: #dbd8f1;
     border: 2px solid black;
-    color: black;
   }
   
   .info:hover + .hide {
     display: block;
-    color: white;
   }
 
  td {
