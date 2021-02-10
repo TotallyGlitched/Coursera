@@ -1,5 +1,9 @@
 .hide {
     display: none;
+    position: absolute;
+    background-color: #d39696;
+    border: 2px solid black;
+    color: black;
   }
   
   .info:hover + .hide {
@@ -9,4 +13,8 @@
 
  td {
     border-bottom: 1px solid white;
+  }
+
+  @media screen and (max-width: 600px) {
+
   }
