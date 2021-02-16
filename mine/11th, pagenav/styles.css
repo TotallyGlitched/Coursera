@@ -1,47 +1,25 @@
-a.bleh{
-    text-decoration: none;
+a.linktext {
+    color: black;
+    padding-inline: 30px;
+    text-transform: uppercase;
 }
 
-a.bleh:hover{
-    color: red;
+a.linktext:hover {
+    text-decoration: none;
+    color: blue;
+    border-bottom: 3px solid blue;
 }
-form{margin-top:1rem;}
+.linktext:active {
+    text-decoration: none;
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+.form{margin-top:1rem;}
 
 .form-group-float{position:relative;}
 .form-control-float{height: 40px;}
 .form-control-float:focus{box-shadow:none;}
 
-.floating-select {
-    font-size: 14px;
-    padding: 4px 4px;
-    display: block;
-    width: 100%;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #757575;
-  }
-
-  .floating-select:focus {
-    outline: none;
-    border-bottom: 2px solid #5264AE;
-  }
-  .floating-select:focus~label,
-.floating-select:not([value=""]):valid~label {
-  top: -18px;
-  font-size: 14px;
-  color: #5264AE;
-}
-.floating-select:focus~.bar:before,
-.floating-select:focus~.bar:after {
-  width: 50%;
-}
-.floating-select:focus~.highlight {
-    -webkit-animation: inputHighlighter 0.3s ease;
-    -moz-animation: inputHighlighter 0.3s ease;
-    animation: inputHighlighter 0.3s ease;
-  }
-  
 .label-float{position:absolute; left:30px; top:10px; transition:all 0.3s; color:#999; font-weight:normal;}
 
 .form-control-float:focus ~ label{left:20px; top:-10px; padding:0 5px; color: black; background-color: white;}
