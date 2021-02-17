@@ -48,6 +48,7 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-custom {
   position: fixed;
+  z-index: 5000;
   background-color: var(--bg-primary);
   transition: width 200ms ease;
 }
