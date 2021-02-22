@@ -11,6 +11,7 @@ body {
   scrollbar-color: #37f2ff9c black;
 }
 
+.main-custom {margin: 1px}
 .scroll::-webkit-scrollbar {width: 0.5rem;}
 .scroll::-webkit-scrollbar-track {background: black;}
 .scroll::-webkit-scrollbar-thumb {background: #37f2ff9c;}
@@ -97,9 +98,6 @@ body::-webkit-scrollbar {width: 0.5rem;}
   transition: 0.6s;
 }
 
-
-
-
 @media only screen and (max-width: 600px) {
   .navbar-custom {
     bottom: 0;
@@ -111,18 +109,11 @@ body::-webkit-scrollbar {width: 0.5rem;}
     overflow-y: hidden; 
     scrollbar-width: thin;
   }
-  
-  .nav-link-custom {
-    filter: grayscale(0%) opacity(1);
-  }
 
-  .logo-custom, .link-text-custom {
-    display: none;
-  }
+  .nav-link-custom {filter: grayscale(0%) opacity(1);}
+  .logo-custom, .link-text-custom {display: none;}
+  .navbar-nav-custom {flex-direction: row;}
 
-  .navbar-nav-custom {
-    flex-direction: row;
-  }
 }
 
 /* Large screens */
@@ -133,13 +124,9 @@ body::-webkit-scrollbar {width: 0.5rem;}
     height: 100vh;
   }
 
-  .navbar-custom:hover {
-    width: 16rem;
-  }
-
-  .navbar-custom:hover .link-text-custom {
-    display: inline;
-  }
+  body{padding-bottom: 5rem;  }
+  .navbar-custom:hover {width: 16rem;}
+  .navbar-custom:hover .link-text-custom {display: inline;}
 
   .navbar-custom:hover .logo-custom i
   {
@@ -150,8 +137,7 @@ body::-webkit-scrollbar {width: 0.5rem;}
 
   }
 
-  .navbar-custom:hover .logo-text-custom
-  {
-    left: 0px;
-  }
+  .main-custom{margin-left: 5.5rem;}
+  .navbar-custom:hover .logo-text-custom{left: 0px;}
+
 }
