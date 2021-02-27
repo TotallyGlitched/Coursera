@@ -97,26 +97,17 @@ body::-webkit-scrollbar {width: 0.5rem;}
 }
 
 @media only screen and (max-width: 600px) {
-  /* .navbar-custom {
-    bottom: 0;
-    width: 100vw;
-    height: 4rem;
-  } */
-/* 
-  .navbar-custom {
-    top: 0;
-    width: 5rem;
-    height: 100vh;
-  } */
-
+ 
+  .logo-text-custom {left: 25px;}
+  .dispp {display: none;}
   .link-text-custom{display: block; width: 10rem;}
+  .nav-link-custom {filter: grayscale(0%) opacity(1);}
 
   .scroll{
     overflow-y: hidden; 
     scrollbar-width: thin;
   }
 
-  .nav-link-custom {filter: grayscale(0%) opacity(1);}
   /* .logo-custom, .link-text-custom {display: none;}
   .navbar-nav-custom {flex-direction: row;} */
 
