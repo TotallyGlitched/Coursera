@@ -1,0 +1,43 @@
+*{
+    font-size: 1.10rem;
+}
+
+.hov-under:hover{
+    color: black;
+    border-bottom: 2px solid black;;
+}
+
+/* map embedd */
+.gmap_canvas {overflow:hidden;background:none!important;height:300px;width: 100%;}
+.mapouter{position:relative;text-align:right;height:300px;width:100%;}
+
+.footer{
+    padding: 6rem;
+    background-color: black;
+}
+
+.footer-links {
+    color: white;
+}
+
+.foot-a-link{
+    color: rgb(155, 155, 155);
+}
+
+.foot-a-link:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.inputs{
+    background-color: black;
+}
+
+a:hover + i, 
+a + i:hover {
+  width: 100%;
+}
+
+a + i {
+    width:0;
+}
