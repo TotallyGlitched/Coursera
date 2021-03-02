@@ -1,0 +1,47 @@
+.oswald{font-family: 'Oswald', sans-serif;}
+.pacifico{font-family: 'pacifico', cursive;}
+.lobster{font-family: 'Lobster', cursive;}
+.acme{font-family: 'Acme', sans-serif;}
+
+#hov{color: white;}
+#hov:active{color: gold;}
+#hov:hover{color: gold; background-color: black;}
+#navbarDropdown{color: white;}
+#navbarDropdown:active{color: gold;}
+#navbarDropdown:hover{color: gold;}
+
+
+.btn-outline-gold{color:gold;border:10px solid gold}
+.btn-outline-gold:hover{color:#fff;background-color:gold;border-color:gold}
+.btn-outline-gold.focus,
+.btn-outline-gold:focus{box-shadow:0 0 0 .2rem rgba(208, 255, 0, 0.5)}
+.btn-outline-gold.disabled,
+.btn-outline-gold:disabled{color:gold;background-color:transparent}
+.btn-outline-gold:not(:disabled):not(.disabled).active,
+.btn-outline-gold:not(:disabled):not(.disabled):active,.show>
+.btn-outline-gold.dropdown-toggle{color:#fff;background-color:gold;border-color:gold}
+.btn-outline-gold:not(:disabled):not(.disabled).active:focus,
+.btn-outline-gold:not(:disabled):not(.disabled):active:focus,.show>
+.btn-outline-gold.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(238, 255, 0, 0.5)}
+
+
+.parallaxed { 
+	background-image: url("images/view2.jpg"); 
+	height: 80vh; 
+    filter: grayscale(0.5);
+	background-attachment: fixed; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+} 
+
+.btng{display:inline-block;font-weight:400; color:#ffffff;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid gold;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+@media (prefers-reduced-motion:reduce)
+{.btng{transition:none}}.btng:hover{color:#212529;text-decoration:none}
+.btng.focus,.btng:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}
+.btng.disabled,.btng:disabled{opacity:.65}
+.btng:not(:disabled):not(.disabled){cursor:pointer}
+a.btng.disabled,fieldset:disabled a.btng{pointer-events:none
+}
+
+.btnw{border: 3px solid white !important; z-index: 200;}
