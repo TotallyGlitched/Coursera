@@ -16,6 +16,7 @@
   }
 
 .form-group-float{position:relative;}
+
 .form-control-float{
     position: relative;
     display: block;
@@ -27,6 +28,7 @@
     color: rgba(0,0,0,0.8);
     transition: all .2s ease-in-out;
 }
+
 .form-control-float:focus{box-shadow:none;
     background-position: left bottom;
     background-size: 100% 1px;
@@ -44,35 +46,24 @@
     left:30px; 
     top:10px;
 }
-
-.form-control-float::placeholder{
-    color: transparent;
-}
+.form-control-float::placeholder{color: transparent;}
 .form-control-float:focus + .label-float, .form-control-float:not(:placeholder-shown) + .label-float{left:20px; top:-3px; color: goldenrod; width: auto; background-color: transparent; }
 
-.lobster {
-    font-family: 'Lobster', cursive;
-}
+.lobster {font-family: 'Lobster', cursive;}
 
 .gradient-gold {
     background-image: linear-gradient(to right, #be9034, #fcf4a1, #b17816);
     background-repeat: repeat-x;
 }
 
-.oswald {
-    font-family: 'Oswald', sans-serif;
-}
-
-.opensans {
-    font-family: 'Open Sans', sans-serif;
-}
-.roboto {
-    font-family: 'Roboto Condensed', sans-serif;
-}
+.oswald {font-family: 'Oswald', sans-serif;}
+.opensans {font-family: 'Open Sans', sans-serif;}
+.roboto {font-family: 'Roboto Condensed', sans-serif;}
 
 .bg-responsive {
     background: url("images/conhal.png")
 }
+
 @media screen and (max-width: 600px){
     .bg-responsive {
         background: url('images/conhalsm.jpg');
@@ -109,17 +100,11 @@
 }
 
 @media screen and (max-width: 5000px) and (min-width: 1401px){
-   .parallax {
-       background: url('images/conhal.png');
-   }
-   .hfix {
-        height: 25rem;
-    }
+   .parallax {background: url('images/conhal.png');}
+   .hfix {height: 25rem;}
 }
 
-.logoo {
-    height: 4rem;
-}
+.logoo {height: 4rem;}
 
 .cards-text {
     color: black;
@@ -198,16 +183,10 @@ table {
     -webkit-text-fill-color: transparent;
 }
  
-body::-webkit-scrollbar {
-    width: 0.5rem;
-  }
-  
-  body::-webkit-scrollbar-track {
-    background:  linear-gradient(0deg, #F9F295 0%, #E0AA3E 25%, #E0AA3E 50%, #B88A44 75%, #dba904 100%);
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: transparent;
-    background: transparent;
-    box-shadow: 0px 0px 0px 100000vh black;
-  }
+body::-webkit-scrollbar {width: 0.5rem;}
+body::-webkit-scrollbar-track {background:  linear-gradient(0deg, #F9F295 0%, #E0AA3E 25%, #E0AA3E 50%, #B88A44 75%, #dba904 100%);}
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh black;
+}
