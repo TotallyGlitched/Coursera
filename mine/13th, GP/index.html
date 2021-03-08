@@ -6,16 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GatewayTech</title>
     <link rel="icon" href="images/logo.svg" type="image/icon type">
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-v4-rtl/4.6.0-1/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.css" integrity="sha512-Mg1KlCCytTmTBaDGnima6U63W48qG1y/PnRdYNj3nPQh3H6PVumcrKViACYJy58uQexRUrBqoADGz2p4CdmvYQ==" crossorigin="anonymous" />
+
     <script src="https://kit.fontawesome.com/42a48ada23.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Acme&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <style>
+    
+        .owl-prev, .owl-next {
+          width: 15px;
+          height: 100px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          display: block !important;
+      }
+      .owl-prev { left: 20px; }
+      .owl-next { right: 20px; }
+      .owl-prev i, .owl-next i {transform:scale(2,5);color: rgba(0, 0, 0, 0.733);}
+      
+      </style>    
 
     <div class="website-home" id="main" style="margin: 0; padding:0; position: relative;">
         <div class="totop"><a href="#main" style="color: rgb(31, 31, 31);padding: 0px 4px;"><i class="fas fa-chevron-up"></i>  </a></div>
@@ -32,9 +49,9 @@
                         <li class="nav-item"><a id="hov" class="nav-link" aria-current="page" href="#main">Home</a></li>
                         <li class="nav-item"><a id="hov" class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a id="hov" class="nav-link" href="#maxim">Maxims</a></li> 
-                        <li class="nav-item"><a id="hov" class="nav-link" href="#services">Services</a></li> 
+                        <li class="nav-item"><a id="hov" class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a id="hov" class="nav-link" href="#products">Portfolio</a></li> 
                         <li class="nav-item"><a id="hov" class="nav-link" href="#contact">Contact</a></li>
-                        <li class="nav-item"><a id="hov" class="nav-link" href="#">Portfolio</a></li>
                     </ul>
                   </div>
               </div>
@@ -117,7 +134,7 @@
         </div>
 
 
-<section class="services m-2 pb-50" id="services" style="background: url(images/marble.jpg); background-size: cover;">
+<section class="services m-2 pb-50" id="services" style="background: url(images/marble.jpg); filter:opacity(0.95); background-size: cover;">
     <div class="container">
        <div class="row">
           <div class="col-xl-6 mx-auto text-center">
@@ -179,6 +196,72 @@
        </div>
     </div>
  </section>
+ <div class="container-fluid">
+    <div class="owl-carousel text-center mt-5 d-flex" id="products" style="color: black;">
+
+        <div class="card h-100">
+            <div  style="height: 20rem;" class="card-img-top">
+                <img style="max-height: 30rem" src="images/bou.svg" alt="">
+            </div>
+            <div class="card-body" style="height: 20rem;">
+              <h3 class="lobster mt-2">Boutique</h3>
+            <p style="text-align: justify;">Online stores are cheaper than maintaining physical stores, saving you rent or buying a space to set up your business. With this, you can save on marketing actions, benefitting with free advertising. Sell more and promote your brand with state-of-the-art storefronts, custom cart and checkout of professional eCommerce apps.</p>
+            </div>          
+        </div>
+    
+        <div class="card h-100">
+            <div  style="height: 20rem;" class="card-img-top">
+                <img style="max-height: 30rem" src="images/inv.svg" alt="">        
+            </div>
+          <div class="card-body" style="height: 20rem;">
+            <h3 class="lobster mt-2">Inventory Management System</h3>
+            <p style="text-align: justify;">An inventory management system combines of technology, processes and procedures that oversee the monitoring and maintenance of stocked products, whether those products are company assets, raw materials and supplies, or finished products ready to be sent to vendors or end consumers.</p>
+          </div>          
+        </div>
+    
+        <div class="card h-100">
+            <div  style="height: 20rem;" class="card-img-top">
+                <img style="max-height: 30rem" src="images/vis.svg" alt="">        
+            </div>
+          <div class="card-body" style="height: 20rem;">
+            <h3 class="lobster mt-2">Visitor Management System</h3>
+            <p style="text-align: justify;">At the most basic level, Visitor Management systems perform the important task of tracking who is on your premises. ... Simply put, Visitor Management systems give you maximum control over the guests accessing your facilities, a key aspect to keeping those facilities safe and secure.</p>
+          </div>          
+        </div>
+    
+        <div class="card h-100">
+            <div  style="height: 20rem;" class="card-img-top">
+                <img style="max-height: 30rem" src="images/groc.svg" alt="">        
+            </div>
+          <div class="card-body" style="height: 20rem;">
+            <h3 class="lobster mt-2">Grocery Store</h3>
+            <p style="text-align: justify;">Switching to online grocery website will result in the reduction of down cost. On a look, a grocery website will help you in minimizing the actual warehouse storage to store the groceries, paying ancillary rent to fuel, power and other expenses, and especially staff retail outlet which consumes more time and outlays. Our apps also ensure perfect security</p>
+          </div>          
+        </div>
+        
+        <div class="card h-100">
+            <div  style="height: 20rem;" class="card-img-top">
+                <img style="max-height: 30rem" src="images/make.svg" alt="">        
+            </div>
+          <div class="card-body" style="height: 20rem;">
+            <h3 class="lobster mt-2">Makeover App</h3>
+          <p style="text-align: justify;">Find their interests and determine what engages them. Through social media, you can show your current and potential customers that your services are the best. Also, the online presence for a salon shows that the salon's thinking is up with the times and makes it far more accessible</p> 
+          </div>          
+        </div>
+      
+        <div class="card h-100">
+            <div  style="height: 20rem;" class="card-img-top">
+                <img style="max-height: 30rem" src="images/it.svg" alt="">        
+            </div>
+          <div class="card-body" style="height: 20rem;">
+            <h3 class="lobster mt-2"><span class="oswald">IT </span> Consulations</h3>
+          <p style="text-align: justify;">The IT industry offers a sea of options, from platforms, programming languages, methodologies, technologies, tools, and more. They play a vital role in businesses by covering the management, implementation, deployment, and maintenance of an IT infrastructure.</p> 
+          </div>          
+        </div>
+    
+    </div>
+ </div>
+ 
 
         <div id="contact" class="container w-100 mt-5 mb-4">
             <h2 class="lobster text-center text-white pb-3">Let's Connect...</h2>
@@ -305,7 +388,30 @@
         </div>
     
     </div>
-    
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js" integrity="sha512-YHQNqPhxuCY2ddskIbDlZfwY6Vx3L3w9WRbyJCY81xpqLmrM6rL2+LocBgeVHwGY9SXYfQWJ+lcEWx1fKS2s8A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.js" integrity="sha512-nw7zwODD4UD9u/C/CO+03s7jXvOZDomBNFX3oOq7Xv0stAyxsxhJzVlxsRTgH3AxK3sK2ijMQou2aSIaorp19g==" crossorigin="anonymous"></script>    <script src="https://kit.fontawesome.com/42a48ada23.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+        
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+</script>
+    
 </body>
 </html>
