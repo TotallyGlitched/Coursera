@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product D</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.css" integrity="sha512-Mg1KlCCytTmTBaDGnima6U63W48qG1y/PnRdYNj3nPQh3H6PVumcrKViACYJy58uQexRUrBqoADGz2p4CdmvYQ==" crossorigin="anonymous" />
+
+    <style>
+      @media (min-width: 768px) {
+        .dropdown:hover {
+          background: #e7e7e7;
+        }
+        .dropdown:hover > .dropdown-menu {
+          display: block;
+        }
+      }
+      .nav{
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        cursor: default;
+      }
+      .navbar-nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 20px;
+      }
+      .navbar-default .navbar-nav {
+        color: red;
+      }
+      .navbar-collapse.collapse {
+        display: none;
+      }
+      .dropdown-open {
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav">
+            <li class="dropdown nav-item">
+              <a href="#" id="dropdown" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </nav>
+</div>
+
+<script>
+    var toggle = document.getElementsById('navbarTogglerDemo01'),
+    collapse = document.getElementsById('navbarTogglerDemo01'),
+    dropdowns = document.getElementsById('dropdown');;
+
+// Toggle if navbar menu is open or closed
+function toggleMenu() {
+    collapse.classList.toggle('collapse');
+    collapse.classList.toggle('in');
+}
+
+// Close all dropdown menus
+function closeMenus() {
+    for (var j = 0; j < dropdowns.length; j++) {
+        dropdowns[j].getElementsById('navbarTogglerDemo01').classList.remove('dropdown-open');
+        dropdowns[j].classList.remove('open');
+    }
+}
+
+// Add click handling to dropdowns
+for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].addEventListener('click', function() {
+        if (document.body.clientWidth < 768) {
+            var open = this.classList.contains('open');
+            closeMenus();
+            if (!open) {
+                this.getElementsById('navbarTogglerDemo01').classList.toggle('dropdown-open');
+                this.classList.toggle('open');
+            }
+        }
+    });
+}
+
+// Close dropdowns when screen becomes big enough to switch to open by hover
+function closeMenusOnResize() {
+    if (document.body.clientWidth >= 768) {
+        closeMenus();
+        collapse.classList.add('collapse');
+        collapse.classList.remove('in');
+    }
+}
+
+// Event listeners
+window.addEventListener('resize', closeMenusOnResize, false);
+toggle.addEventListener('click', toggleMenu, false);
+</script>
+  </body>
+</html>
